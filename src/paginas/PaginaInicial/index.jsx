@@ -1,9 +1,10 @@
-import Cabecalho from "../../componentes/Cabecalho";
-import Menu from "../../componentes/Menu";
+import Cabecalho from "componentes/Cabecalho";
+import Menu from "componentes/Menu";
 import banner from '../../assets/banner.png';
 import styles from './PaginaInicial.module.scss';
-import Galeria from "../../componentes/Galeria";
-import Rodape from "../../componentes/Rodape";
+import Galeria from "componentes/Galeria";
+import Rodape from "componentes/Rodape";
+import Populares from "componentes/Populares";
 
 export default function PaginaInicial() {
     return (
@@ -17,11 +18,12 @@ export default function PaginaInicial() {
                         <img src={banner} alt="A imagem da Terra vista do espaço" />
                     </div>
                 </section>
-            </main>
 
-            <div className={styles.galeria}>
-                <Galeria />
-            </div>
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
+            </main>
             <Rodape />
 
         </>
